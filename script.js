@@ -50,5 +50,8 @@ function generate() {
   var number = document.getElementById("numbers").checked;
   var symbol = document.getElementById("symbols").checked;
   
+  // checking to see if the above are defined, if not then return
+  if (lowerCase + upperCase + number + symbol <= 0)
+  return;
 
 }
