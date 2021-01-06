@@ -38,3 +38,17 @@ function getRandomSymbol() {
 function generater(min = 0, max = 1) {
   return Math.floor(Math.random() * (max + 1 - min) + min);
 }
+
+// create a function to store our password, our value (length), and our checked boxes
+function generate() {
+
+  var password = "";
+  
+  var length = +document.getElementById("length").value;
+  var lowerCase = document.getElementById("lowercase").checked;
+  var upperCase = document.getElementById("uppercase").checked;
+  var number = document.getElementById("numbers").checked;
+  var symbol = document.getElementById("symbols").checked;
+  
+
+}
