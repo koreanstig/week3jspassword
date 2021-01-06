@@ -1,17 +1,19 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// I commented this inputs out myself as I used onclick in the html instead
+
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-}
+// }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// generateBtn.addEventListener("click", writePassword);
 
 
 
