@@ -26,3 +26,8 @@ function getRandomLower() {
 function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
+
+// we continue to use the same equation here except instead of 26 alphabets, there are 10 numbers which start at 48 in the charset
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
