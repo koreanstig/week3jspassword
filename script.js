@@ -31,3 +31,10 @@ function getRandomUpper() {
 function getRandomNumber() {
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
+
+// to get random symbols, we're creating a string variable with all the different symbols you can use and we added 
+// the floor and random functions in order to grab a random symbol within the string
+function getRandomSymbol() {
+  var symbols = "!@#$%^&*(){}[]=<>/,.";
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
