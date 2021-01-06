@@ -27,14 +27,14 @@ function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-// we continue to use the same equation here except instead of 26 alphabets, there are 10 numbers which start at 48 in the charset
-function getRandomNumber() {
-  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
 // to get random symbols, we're creating a string variable with all the different symbols you can use and we added 
 // the floor and random functions in order to grab a random symbol within the string
 function getRandomSymbol() {
   var symbols = "!@#$%^&*(){}[]=<>/,.";
   return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+// as we will need to randomize between symbols, nums, upper, and lower, i found an equation that would work better than my last for randomizing numbers
+function generater(min = 0, max = 1) {
+  return Math.floor(Math.random() * (max + 1 - min) + min);
 }
