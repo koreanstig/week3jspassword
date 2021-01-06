@@ -54,4 +54,23 @@ function generate() {
   if (lowerCase + upperCase + number + symbol <= 0)
   return;
 
+  
+  // there are 4 var (lower, upper, symbol, num) and we are assigning and checking each 
+  for (let i = 0; i < length; i++) {
+    var r = generater(0, 3);
+    // if lowercase is true and is equal to 0, we'll add a lowercase letter/ conversly if it was 
+    // not true, we would subract i which would negate the addition to begin with and it would replay
+    if (lowerCase && r === 0) {
+      password += getRandomLower();
+    } else if (upperCase && r === 1) {
+      password += getRandomUpper();
+    } else if (symbol && r === 2) {
+      password += getRandomSymbol();
+    } else if (number && r === 3) {
+      password += generater(0,9);
+    } else {
+      i--;
+    }
+  }
+  
 }
