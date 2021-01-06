@@ -22,3 +22,7 @@ function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
+// we use the same equation as we got for the lowercase alphabet, however we add 65 as that's when the uppercase starts in the charset
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
