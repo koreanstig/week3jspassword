@@ -72,5 +72,6 @@ function generate() {
       i--;
     }
   }
-  
+  // select #password and add it to the text content
+  document.getElementById("password").textContent = password;
 }
