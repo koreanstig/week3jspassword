@@ -46,7 +46,7 @@ function generate() {
 
   var password = "";
   
-  var length = +document.getElementById("length").value;
+  var length = document.getElementById("length").value;
   var lowerCase = document.getElementById("lowercase").checked;
   var upperCase = document.getElementById("uppercase").checked;
   var number = document.getElementById("numbers").checked;
