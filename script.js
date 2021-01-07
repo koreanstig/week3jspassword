@@ -47,6 +47,12 @@ var length2 = document.getElementById("length2")
 // added an eventlistener to watch for inputs, and named a new function
 length.addEventListener('input', synchCharLen)
 length2.addEventListener('input', synchCharLen)
+// lastly added a function that makes the values equal for length and length2
+function synchCharLen(e) {
+  var value = e.target.value
+  length.value = value
+  length2.value - value
+}
 
 
 // create a function to store our password, our value (length), and our checked boxes
