@@ -41,6 +41,11 @@ function generater(min = 0, max = 1) {
   return Math.floor(Math.random() * (max + 1 - min) + min);
 }
 
+// I have this var already defined in generate() however in order to link these vars by id, i have to do it outside the function
+var length = document.getElementById("length")
+var length2 = document.getElementById("length2")
+
+
 // create a function to store our password, our value (length), and our checked boxes
 function generate() {
 
